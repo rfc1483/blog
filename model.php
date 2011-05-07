@@ -3,7 +3,7 @@
 // model.php
 
 function open_database_connection() {
-    $link = mysql_connect('localhost', 'myuser', 'mypassword');
+    $link = mysql_connect('localhost', 'root');
     mysql_select_db('blog_db', $link);
 
     return $link;
