@@ -1,0 +1,6 @@
+<IfModule mod_rewrite.c>
+    RewriteEngine On
+    RewriteBase /blog/show/
+    
+    RewriteRule ^([a-zA-Z0-9]+)$ index.php/show?id=$1
+</IfModule>
